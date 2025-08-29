@@ -20,7 +20,7 @@ export default function SearchBox({ searchTextValue, onChange }: SearchBoxProps)
 
     useEffect(() => {
         debouncedChange();
-    }, [query]);
+    }, [debouncedChange, query, searchTextValue]);
 
     return (
         <input
